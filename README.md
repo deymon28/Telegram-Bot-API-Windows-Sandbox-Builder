@@ -124,9 +124,18 @@ Alternatively, you can skip editing and manually copy-paste the script inside th
 
 Double-click `sandbox.wsb`. A Windows Sandbox window will open. If you added `LogonCommand`, the build starts automatically. Otherwise, open PowerShell inside the Sandbox and run:
 
+##### Run `PowerShell` as administrator
+
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
 powershell -ExecutionPolicy Bypass -File C:\build-telegram-bot-api.ps1
+```
+##### OR if you use actual.ps1(and if path in PowerShell - `C:\Windows\system32>`) use:
+
+```powershell
+cd ..\..
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
+powershell -ExecutionPolicy Bypass -File "C:\build-telegram-bot-api - actual.ps1"
 ```
 
 ### Step 4 — Wait for the build to finish
