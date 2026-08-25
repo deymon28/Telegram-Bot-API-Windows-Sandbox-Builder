@@ -1,4 +1,4 @@
-# Telegram Bot API — Windows Sandbox Builder
+# Telegram Bot API server — Windows Sandbox Builder
 
 Build a fully **static, standalone** `telegram-bot-api.exe` (the [tdlib Local Bot API Server](https://github.com/tdlib/telegram-bot-api)) inside a **disposable Windows Sandbox**, so your host machine stays clean. A pre-built binary is also included for convenience.
 
